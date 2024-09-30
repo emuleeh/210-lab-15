@@ -53,6 +53,11 @@ int main() {
     }
     else
         cout << "Input file not found.\n";
+    
+    //Output vector
+    for (auto val : movies_v) {
+        val.print();
+    }
 }
 
 
