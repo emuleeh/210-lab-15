@@ -26,6 +26,7 @@ public:
         cout << setw(W15) << "Movie: " << title << endl;
         cout << setw(W15) << "Year released: " << year << endl;
         cout << setw(W15) << "Screenwriter: " << writer << endl;
+        cout << endl;
     }
 };
 
