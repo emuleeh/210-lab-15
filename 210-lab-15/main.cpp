@@ -30,5 +30,17 @@ public:
 };
 
 int main() {
+    //declarations
+    cout << fixed << setprecision(2);
+    vector<Movie> movies_v;
+    ifstream fin ("movies.txt");
+    string l;   //holds temporary title
+    int r;      //holds temporary year
+    string s;   //holds temporary writer
     
+    if (fin.good()) {
+        while (getline(fin, l)) {
+            fin >> r;
+        }
+    }
 }
