@@ -41,6 +41,18 @@ int main() {
     if (fin.good()) {
         while (getline(fin, l)) {
             fin >> r;
+            fin.ignore();
+            getline(fin, s);
+            Movie tmp;
+            tmp.setTitle(l);
+            tmp.setYear(r);
+            tmp.setWriter(s);
+            movies_v.push_back(tmp);
         }
+        fin.close();
     }
+    else
+        cout << "Input file not found.\n";
 }
+
+
